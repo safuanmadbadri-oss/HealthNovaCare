@@ -158,13 +158,33 @@
 
     <h2>Book an Appointment</h2>
 
-    <form class="appointment-form">
+<form class="appointment-form" action="https://api.web3forms.com/submit" method="POST">
 
-        <input type="text" placeholder="Full Name" required>
+    <!-- Web3Forms Access Key -->
+    <input type="hidden" name="access_key" value="ce529780-90cf-461e-9947-9871ce0151ef">
 
-        <input type="email" placeholder="Email Address" required>
+    <input type="text" name="name" placeholder="Full Name" required>
 
-        <input type="tel" placeholder="Phone Number" required>
+    <input type="email" name="email" placeholder="Email Address" required>
+
+    <input type="tel" name="phone" placeholder="Phone Number" required>
+
+    <input type="date" name="date" required>
+
+    <select name="department" required>
+        <option value="">Select Department</option>
+        <option value="Cardiology">Cardiology</option>
+        <option value="Dental">Dental</option>
+        <option value="Pediatrics">Pediatrics</option>
+        <option value="Emergency">Emergency</option>
+    </select>
+
+    <textarea name="notes" placeholder="Additional Notes"></textarea>
+
+    <button type="submit">Book Now</button>
+
+</form>
+...
 
         <input type="date" required>
 
