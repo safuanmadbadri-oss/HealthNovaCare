@@ -391,3 +391,13 @@ footer{
 .testimonial-card h4{
     color:#0077cc;
 }
+.doctor-img{
+    width:250px;
+    height:250px;
+    border-radius:50%;
+    object-fit:cover;
+    margin:30px auto;
+    display:block;
+    border:6px solid white;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
